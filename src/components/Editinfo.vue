@@ -151,8 +151,9 @@
         'high activity',
         'extremely high'
       ],
-      fat: '',
+      fat: null,
       fatRules: [
+        // v => (typeof(v) == String) || 'Must be a Number',
         v => (v < 100 && v >= 0) || 'Precent of fat must be valid'
       ],
       enabledFat: false
@@ -182,7 +183,7 @@
     watch: {
       enabledFat(val){
         if(!val){
-          this.fat = ''
+          this.fat = null
         }
       }
     }

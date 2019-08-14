@@ -48,9 +48,11 @@
       </tbody>
     </v-simple-table>
     <v-card-actions>
-      <v-spacer></v-spacer>
-      <v-btn color="secondary" :to="'/user/edit'">Update Info</v-btn>
-      <v-spacer></v-spacer>
+      
+      <v-btn color="success" :to="'/user/edit'">Update Info</v-btn>
+      <!-- <v-spacer></v-spacer> -->
+      <v-btn color="warning" :to="'/user/plan'">Diet Plan</v-btn>
+      <!-- <v-spacer></v-spacer> -->
     </v-card-actions>
     </v-flex>
   </v-container>
@@ -66,7 +68,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .tab {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
   font-size: 16px;
@@ -74,7 +76,8 @@ export default {
   text-align: center;
 }
 th, td:first-child {
-  background: #AFCDE7;
+  /* background: #AFCDE7; */
+  background: #2196F3;
   color: white;
   padding: 15px 50px;
 }
@@ -85,6 +88,7 @@ th, td {
 }
 td {
   background: #D8E6F3;
+  background: #82B1FF;
 }
 th:first-child, td:first-child {
   text-align: left;

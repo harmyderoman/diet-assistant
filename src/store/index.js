@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-// import author from './author'
 import dishes from './dishes'
 import user from './user'
 
